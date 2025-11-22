@@ -17,6 +17,17 @@ export interface Property {
   nextCleaning?: string;
 }
 
+export interface TenantApplication {
+  id: string;
+  name: string;
+  propertyInterest: string; // ID of property
+  income: number;
+  creditScore: number; // Simulated
+  employmentStatus: string;
+  references: string[];
+  status: 'Pending' | 'Approved' | 'Rejected' | 'Under Review';
+}
+
 export interface Vehicle {
   id: string;
   model: string;
@@ -25,6 +36,9 @@ export interface Vehicle {
   mileage: number;
   driver: string;
   fuelLevel: number;
+  location: { lat: number; lng: number; address: string };
+  lastServiceDate: string;
+  nextServiceMileage: number;
 }
 
 export interface Subscriber {

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, Legend } from 'recharts';
 import { StatCard } from '../components/StatCard';
 import { MOCK_ANALYTICS, MOCK_FLEET, MOCK_PROPERTIES, MOCK_SUBSCRIBERS } from '../constants';
-import { DollarSign, Activity, AlertTriangle, Users } from 'lucide-react';
+import { DollarSign, Activity, AlertTriangle, Users, Sparkles } from 'lucide-react';
+import { fastAnalyze } from '../services/geminiService';
 
 export const Dashboard: React.FC = () => {
   // Calculate aggregate stats
@@ -11,6 +12,18 @@ export const Dashboard: React.FC = () => {
   const maintenanceFleet = MOCK_FLEET.filter(v => v.status === 'Service').length;
   const activeSubscribers = MOCK_SUBSCRIBERS.filter(s => s.status === 'Active').length;
   const occupiedProperties = MOCK_PROPERTIES.filter(p => p.status === 'Occupied').length;
+
+  const [insight, setInsight] = useState("OmniNexus AI has detected an anomaly in March expenses. Costs were 400% higher than average.");
+  const [loadingInsight, setLoadingInsight] = useState(false);
+
+  const refreshInsight = async () => {
+      setLoadingInsight(true);
+      const prompt = "Generate a one-sentence fast insight about the current fleet status and revenue trends.";
+      const context = `Revenue: ${totalRevenue}, Active Fleet: ${activeFleet}, Maintenance: ${maintenanceFleet}, Subscribers: ${activeSubscribers}`;
+      const result = await fastAnalyze(prompt, context);
+      setInsight(result);
+      setLoadingInsight(false);
+  };
 
   return (
     <div className="space-y-6">
@@ -110,11 +123,19 @@ export const Dashboard: React.FC = () => {
             <div className="p-3 bg-brand-500/20 rounded-lg">
                 <Activity className="text-brand-400" size={24} />
             </div>
-            <div>
-                <h3 className="text-lg font-semibold text-white">AI Insight Detected</h3>
-                <p className="text-slate-300 mt-1 text-sm max-w-2xl">
-                    OmniNexus AI has detected an anomaly in March expenses. Costs were 400% higher than average. 
-                    Check the Fleet Maintenance logs or ask the AI Assistant for a detailed breakdown.
+            <div className="flex-1">
+                <div className="flex justify-between items-center mb-1">
+                    <h3 className="text-lg font-semibold text-white">AI Insight Detected</h3>
+                    <button 
+                        onClick={refreshInsight} 
+                        className="text-xs flex items-center gap-1 text-brand-400 hover:text-brand-300"
+                        disabled={loadingInsight}
+                    >
+                        <Sparkles size={12} /> {loadingInsight ? 'Refreshing...' : 'Refresh Analysis'}
+                    </button>
+                </div>
+                <p className="text-slate-300 mt-1 text-sm max-w-2xl leading-relaxed">
+                    {insight}
                 </p>
             </div>
          </div>

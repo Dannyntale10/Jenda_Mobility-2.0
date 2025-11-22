@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Scale, FileCheck, Globe, ShieldCheck } from 'lucide-react';
-import { generateAIResponse } from '../services/geminiService';
+import { fastAnalyze } from '../services/geminiService';
 
 export const LegalAI: React.FC = () => {
     const [query, setQuery] = useState('');
@@ -10,8 +10,9 @@ export const LegalAI: React.FC = () => {
     const handleConsultation = async () => {
         if(!query) return;
         setLoading(true);
+        // Using fastAnalyze for quicker legal compliance checks as requested by "fast AI responses" feature
         const prompt = `As a legal compliance expert for rental and ISP businesses in Uganda/East Africa, answer the following query: ${query}`;
-        const response = await generateAIResponse(prompt, "Legal Compliance Module");
+        const response = await fastAnalyze(prompt, "Legal Compliance Module");
         setResult(response);
         setLoading(false);
     };
