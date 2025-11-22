@@ -1,0 +1,7 @@
+{
+  "name": "Copy of OmniNexus SaaS",
+  "description": "A unified multi-tenant platform for Property, Fleet, and ISP management with integrated AI operations.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
