@@ -396,7 +396,7 @@ document.addEventListener('DOMContentLoaded', function () {
         submitBtn.disabled = true;
 
         // Replace 'YOUR_FORMSPREE_ID' with your actual Formspree form ID
-        fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+        fetch('https://formspree.io/f/mldqplvy', {
             method: 'POST',
             body: formData,
             headers: {
