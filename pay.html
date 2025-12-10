@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment | Jenda Mobility</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="premium.css">
+    <style>
+        .pay-container {
+            min-height: 100vh;
+            padding-top: 100px;
+            padding-bottom: 50px;
+            background: var(--surface-bg);
+            display: flex;
+            justify-content: center;
+        }
+
+        .pay-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 2rem;
+            max-width: 1100px;
+            width: 90%;
+        }
+
+        .pay-card {
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--gray-200);
+        }
+
+        .pay-header {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--gray-200);
+            padding-bottom: 1rem;
+        }
+
+        .payment-methods {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .payment-method {
+            border: 2px solid var(--gray-200);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .payment-method.active,
+        .payment-method:hover {
+            border-color: var(--primary-ocean);
+            background: rgba(14, 165, 233, 0.05);
+        }
+
+        .payment-method i {
+            font-size: 2rem;
+            color: var(--gray-700);
+            margin-bottom: 0.5rem;
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            color: var(--gray-600);
+        }
+
+        .summary-total {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 2px solid var(--gray-200);
+            font-weight: 800;
+            font-size: 1.25rem;
+            color: var(--gray-900);
+        }
+
+        .secure-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            color: #059669;
+            background: #D1FAE5;
+            padding: 0.5rem;
+            border-radius: var(--radius-md);
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .pay-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation (Simplified) -->
+    <nav class="navbar" style="background: white; position: fixed;">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Jenda Mobility Logo">
+                <span>Jenda Mobility</span>
+            </a>
+            <div class="secure-lock" style="display: flex; align-items: center; gap: 8px; color: var(--gray-600);">
+                <i class="fas fa-lock"></i> Secure Checkout
+            </div>
+        </div>
+    </nav>
+
+    <div class="pay-container">
+        <div class="pay-grid">
+            <!-- Left: Payment Details -->
+            <div class="pay-card">
+                <div class="pay-header">
+                    <h2>Select Payment Method</h2>
+                    <p style="color: var(--gray-500);">Choose how you want to pay</p>
+                </div>
+
+                <div class="payment-methods">
+                    <div class="payment-method active">
+                        <i class="fas fa-mobile-alt" style="color: #F59E0B;"></i>
+                        <h3>Mobile Money</h3>
+                        <p style="font-size: 0.8rem;">MTN / Airtel</p>
+                    </div>
+                    <div class="payment-method">
+                        <i class="far fa-credit-card" style="color: #0EA5E9;"></i>
+                        <h3>Card Payment</h3>
+                        <p style="font-size: 0.8rem;">Visa / Mastercard</p>
+                    </div>
+                </div>
+
+                <form>
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label class="form-label"
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Mobile Number</label>
+                        <input type="tel" class="form-input" placeholder="+256 700 000 000"
+                            style="width: 100%; padding: 1rem; border: 2px solid var(--gray-200); border-radius: var(--radius-md);"
+                            required>
+                        <p style="font-size: 0.8rem; color: var(--gray-500); margin-top: 0.5rem;">Enter the number
+                            registered with Mobile Money</p>
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-large" style="width: 100%;"
+                        onclick="alert('Integration Mode: This would initiate a Mobile Money push prompt.')">
+                        Pay with Mobile Money
+                    </button>
+
+                    <div class="secure-badge">
+                        <i class="fas fa-shield-alt"></i> 256-bit SSL Encrypted Payment
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right: Order Summary -->
+            <div class="pay-card" style="height: fit-content;">
+                <div class="pay-header">
+                    <h3>Order Summary</h3>
+                </div>
+
+                <div class="summary-item">
+                    <span>Web Development Deposit</span>
+                    <span>UGX 1,500,000</span>
+                </div>
+                <div class="summary-item">
+                    <span>Hosting (1 Year)</span>
+                    <span>UGX 350,000</span>
+                </div>
+                <div class="summary-item">
+                    <span>Domain Registration</span>
+                    <span>UGX 50,000</span>
+                </div>
+
+                <div class="summary-total">
+                    <span>Total Due</span>
+                    <span>UGX 1,900,000</span>
+                </div>
+
+                <div style="margin-top: 1.5rem; padding: 1rem; background: #F3F4F6; border-radius: var(--radius-md);">
+                    <h4 style="margin-bottom: 0.5rem; font-size: 0.9rem;">Jenda Mobility Guarantee</h4>
+                    <p style="font-size: 0.8rem; color: var(--gray-600);">We are committed to delivering excellence.
+                        100% Satisfaction Guaranteed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

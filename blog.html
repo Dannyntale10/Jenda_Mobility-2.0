@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Jenda Mobility</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="premium.css">
+    <style>
+        .blog-header {
+            padding-top: 120px;
+            padding-bottom: 60px;
+            background: var(--gradient-hero);
+            text-align: center;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 4rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .blog-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .blog-image {
+            height: 200px;
+            width: 100%;
+            background: var(--gradient-primary);
+            position: relative;
+        }
+
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 2rem;
+        }
+
+        .blog-meta {
+            font-size: 0.875rem;
+            color: var(--gray-500);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .blog-content h3 {
+            margin-bottom: 1rem;
+            color: var(--gray-900);
+            font-size: 1.5rem;
+        }
+
+        .blog-content p {
+            color: var(--gray-600);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .cta-section {
+            background: var(--surface-card);
+            padding: 4rem 5%;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Jenda Mobility Logo">
+                <span>Jenda Mobility</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li class="nav-item"><a href="index.html#pricing" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="btn btn-primary">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <header class="blog-header">
+        <h1 class="fade-in">Jenda Mobility Insights</h1>
+        <p class="subtitle fade-in">Latest trends in Web Development, SEO, and Digital Growth in Uganda</p>
+    </header>
+
+    <!-- Blog Grid -->
+    <section class="blog-grid">
+        <!-- Article 1 -->
+        <article class="blog-card fade-in">
+            <div class="blog-image">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80"
+                    alt="Web Development">
+            </div>
+            <div class="blog-content">
+                <div class="blog-meta">
+                    <span><i class="far fa-calendar"></i> Dec 10, 2025</span>
+                    <span><i class="far fa-user"></i> Danny Ntale</span>
+                </div>
+                <h3>Why Every Ugandan Business Needs a Premium Website in 2025</h3>
+                <p>In today's digital age, relying solely on social media is risky. Discover why a professional website
+                    is the asset that builds trust and drives automated sales.</p>
+                <a href="#" class="btn btn-small btn-outline">Read More</a>
+            </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="blog-card fade-in">
+            <div class="blog-image">
+                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&q=80" alt="SEO Strategies">
+            </div>
+            <div class="blog-content">
+                <div class="blog-meta">
+                    <span><i class="far fa-calendar"></i> Dec 8, 2025</span>
+                    <span><i class="far fa-user"></i> Danny Ntale</span>
+                </div>
+                <h3>SEO in Kampala: How to Rank #1 on Google</h3>
+                <p>Local SEO is a goldmine for Kampala businesses. Learn the top 5 strategies to make sure customers
+                    find YOU when they search for services nearby.</p>
+                <a href="#" class="btn btn-small btn-outline">Read More</a>
+            </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="blog-card fade-in">
+            <div class="blog-image">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80"
+                    alt="Digital Payments">
+            </div>
+            <div class="blog-content">
+                <div class="blog-meta">
+                    <span><i class="far fa-calendar"></i> Dec 5, 2025</span>
+                    <span><i class="far fa-user"></i> Danny Ntale</span>
+                </div>
+                <h3>Integrating Mobile Money: Boosting Sales by 40%</h3>
+                <p>Allowing customers to pay via MTN and Airtel Money isn't just convenient—it's essential. See how
+                    payment integration smooths the checkout process.</p>
+                <a href="#" class="btn btn-small btn-outline">Read More</a>
+            </div>
+        </article>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <h2>Ready to grow your business?</h2>
+        <p>Let's implement these strategies for your brand today.</p>
+        <br>
+        <a href="index.html#contact" class="btn btn-primary btn-large">Start Your Project</a>
+    </section>
+
+    <!-- Footer (Simplified) -->
+    <footer style="background: var(--gray-900); color: white; padding: 2rem 5%; text-align: center;">
+        <p>&copy; 2025 Jenda Mobility. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

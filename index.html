@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenda Mobility | Premium Web Development & Digital Solutions in Uganda</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Jenda Mobility: Leading web development and digital marketing agency in Kampala, Uganda. We build premium websites, SaaS platforms, and digital solutions that drive growth.">
+    <meta name="keywords"
+        content="web development uganda, website design kampala, digital marketing agency, SEO services uganda, mobile app development, branding, software development">
+    <meta name="author" content="Jenda Mobility">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jendamobility.com/">
+    <meta property="og:title" content="Jenda Mobility | Premium Web Development in Uganda">
+    <meta property="og:description"
+        content="Transforming businesses with cutting-edge web development, design, and digital strategies. Based in Kampala.">
+    <meta property="og:image" content="logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jendamobility.com/">
+    <meta property="twitter:title" content="Jenda Mobility | Premium Web Development">
+    <meta property="twitter:description" content="Leading web development agency in Kampala. We build digital future.">
+    <meta property="twitter:image" content="logo.png">
+
+    <!-- Google Analytics 4 (Placeholder) -->
+    <!-- Replace G-XXXXXXXXXX with your actual Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- Tawk.to Live Chat (Placeholder) -->
+    <!-- Replace with your Tawk.to Property ID or Embed Code -->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/YOUR_PROPERTY_ID/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="premium.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loader-logo">
+                <img src="logo.png" alt="Jenda Mobility">
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="logo.png" alt="Jenda Mobility Logo">
+                <span>Jenda Mobility</span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#contact" class="nav-link btn btn-primary">Get Started</a></li>
+            </ul>
+
+            <button class="mobile-menu-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Floating Contact Button -->
+    <a href="https://wa.me/256703317310" class="floating-contact" id="floatingContact" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="floating-contact-text">Chat Now</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge fade-in">
+                <i class="fas fa-star"></i>
+                <span>Rated 5/5 by 150+ Happy Clients</span>
+            </div>
+            <h1 class="fade-in">
+                <span class="typed-text" id="typedText"></span>
+                <span class="text-gradient">Digital Presence</span>
+            </h1>
+            <p class="fade-in">We transform small and large businesses into digital powerhouses with world-class
+                websites, strategic SEO, and comprehensive online solutions.</p>
+
+            <div class="hero-buttons fade-in">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Start Your Journey
+                </a>
+                <a href="#portfolio" class="btn btn-outline">
+                    <i class="fas fa-folder-open"></i>
+                    View Our Work
+                </a>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="trust-indicators fade-in">
+                <div class="trust-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>100% Satisfaction Guaranteed</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-clock"></i>
+                    <span>24-Hour Response Time</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-award"></i>
+                    <span>Award-Winning Team</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Comprehensive digital solutions tailored to amplify your business growth</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom, responsive websites that captivate your audience and drive conversions. Built with
+                        cutting-edge technology and stunning design.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Responsive Design</span>
+                        <span><i class="fas fa-check"></i> Fast Loading</span>
+                        <span><i class="fas fa-check"></i> SEO Ready</span>
+                    </div>
+                    <a href="#contact" class="btn btn-outline btn-small">
+                        <i class="fas fa-arrow-right"></i>
+                        Learn More
+                    </a>
+                </div>
+
+                <div class="service-card featured fade-in">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Dominate search rankings with our proven SEO strategies. Increase visibility, traffic, and
+                        revenue for your business.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Keyword Research</span>
+                        <span><i class="fas fa-check"></i> On-Page SEO</span>
+                        <span><i class="fas fa-check"></i> Link Building</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary btn-small">
+                        <i class="fas fa-arrow-right"></i>
+                        Learn More
+                    </a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Google Maps Integration</h3>
+                    <p>Enhance local discovery with professional Google My Business optimization and strategic
+                        location-based marketing.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> GMB Setup</span>
+                        <span><i class="fas fa-check"></i> Review Management</span>
+                        <span><i class="fas fa-check"></i> Local SEO</span>
+                    </div>
+                    <a href="#contact" class="btn btn-outline btn-small">
+                        <i class="fas fa-arrow-right"></i>
+                        Learn More
+                    </a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Branding & Design</h3>
+                    <p>Create a memorable brand identity with our expert design services. From logos to complete brand
+                        guidelines.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Logo Design</span>
+                        <span><i class="fas fa-check"></i> Brand Guidelines</span>
+                        <span><i class="fas fa-check"></i> Marketing Materials</span>
+                    </div>
+                    <a href="#contact" class="btn btn-outline btn-small">
+                        <i class="fas fa-arrow-right"></i>
+                        Learn More
+                    </a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Comprehensive digital marketing campaigns that reach your target audience and maximize ROI across
+                        all channels.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Social Media</span>
+                        <span><i class="fas fa-check"></i> PPC Campaigns</span>
+                        <span><i class="fas fa-check"></i> Email Marketing</span>
+                    </div>
+                    <a href="#contact" class="btn btn-outline btn-small">
+                        <i class="fas fa-arrow-right"></i>
+                        Learn More
+                    </a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Website Optimization</h3>
+                    <p>Boost performance, speed, and user experience. Convert more visitors into customers with
+                        optimized web experiences.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Speed Optimization</span>
+                        <span><i class="fas fa-check"></i> Conversion Rate</span>
+                        <span><i class="fas fa-check"></i> Analytics Setup</span>
+                    </div>
+                    <a href="#contact" class="btn btn-outline btn-small">
+                        <i class="fas fa-arrow-right"></i>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Work</h2>
+                <p>Explore our portfolio of successful projects and transformations</p>
+            </div>
+
+            <!-- Portfolio Filter -->
+            <div class="portfolio-filter fade-in">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="seo">SEO</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+
+            <!-- Portfolio Grid (Bento Style) -->
+            <div class="portfolio-grid">
+                <!-- Large Featured Project - Mboga Brands -->
+                <div class="portfolio-item large fade-in" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="mboga-brands.png" alt="Mboga Brands Portfolio Screenshot">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Mboga Brands Portfolio</h3>
+                        <p>Professional portfolio website with modern design</p>
+                        <div class="portfolio-tags">
+                            <span>Web Design</span>
+                            <span>CSS</span>
+                            <span>Portfolio</span>
+                        </div>
+                        <a href="https://github.com/dannyntale10/Mboga_Brands" target="_blank"
+                            class="btn btn-small btn-outline">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Afristay Platform -->
+                <div class="portfolio-item fade-in" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="afristay.png" alt="Afristay Booking Platform Screenshot">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Afristay Booking Platform</h3>
+                        <p>Full-featured accommodation booking system</p>
+                        <div class="portfolio-tags">
+                            <span>Web App</span>
+                            <span>Booking System</span>
+                        </div>
+                        <a href="https://github.com/dannyntale10/Afristay" target="_blank"
+                            class="btn btn-small btn-outline">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Internet Billing System -->
+                <div class="portfolio-item wide billing-theme fade-in" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+                            alt="Internet Billing Dashboard">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Internet Billing SaaS</h3>
+                        <p>Complete billing management system for ISPs</p>
+                        <div class="portfolio-tags">
+                            <span>SaaS</span>
+                            <span>Billing</span>
+                            <span>Payment</span>
+                        </div>
+                        <a href="https://github.com/dannyntale10/saas-internet-billing" target="_blank"
+                            class="btn btn-small btn-outline">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RentFlow -->
+                <div class="portfolio-item rental-theme fade-in" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop"
+                            alt="RentFlow Property Management">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>RentFlow Management</h3>
+                        <p>Property rental management platform</p>
+                        <div class="portfolio-tags">
+                            <span>Web App</span>
+                            <span>Real Estate</span>
+                        </div>
+                        <a href="https://github.com/dannyntale10/rentflow" target="_blank"
+                            class="btn btn-small btn-outline">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Genius Plumbing -->
+                <div class="portfolio-item service-theme fade-in" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="genius-plumbing.webp" alt="Genius Plumbing Website">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Genius Plumbing Services</h3>
+                        <p>Professional service business website</p>
+                        <div class="portfolio-tags">
+                            <span>Web Design</span>
+                            <span>Business Site</span>
+                        </div>
+                        <a href="https://genius-plumbing-services.vercel.app/" target="_blank"
+                            class="btn btn-small btn-primary" style="margin-right: 10px;">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Live Site
+                        </a>
+                        <a href="https://github.com/dannyntale10/genius-plumbing-services" target="_blank"
+                            class="btn btn-small btn-outline">
+                            <i class="fas fa-code"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- AI Model -->
+                <div class="portfolio-item ai-theme fade-in" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop"
+                            alt="AI Model Interface">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>AI Model Project</h3>
+                        <p>Machine learning and AI implementation</p>
+                        <div class="portfolio-tags">
+                            <span>AI/ML</span>
+                            <span>Innovation</span>
+                        </div>
+                        <a href="https://github.com/dannyntale10/Ai-model" target="_blank"
+                            class="btn btn-small btn-outline">
+                            <i class="fas fa-external-link-alt"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process" id="process">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Process</h2>
+                <p>A proven methodology that delivers exceptional results every time</p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-step fade-in">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Discovery</h3>
+                        <p>We dive deep into your business goals, target audience, and competitive landscape to create a
+                            strategic foundation.</p>
+                        <div class="step-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>1-2 Days</span>
+                        </div>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+
+                <div class="process-step fade-in">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Strategy</h3>
+                        <p>Develop a customized roadmap with clear milestones, leveraging data-driven insights to
+                            maximize impact.</p>
+                        <div class="step-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>2-3 Days</span>
+                        </div>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                </div>
+
+                <div class="process-step fade-in">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Design & Build</h3>
+                        <p>Craft beautiful, functional solutions that align with your brand and engage your audience
+                            effectively.</p>
+                        <div class="step-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>5-10 Days</span>
+                        </div>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+
+                <div class="process-step fade-in">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Launch & Optimize</h3>
+                        <p>Deploy your solution and continuously refine based on real-world data and user feedback for
+                            optimal performance.</p>
+                        <div class="step-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>Ongoing</span>
+                        </div>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="counter" data-target="150">0</h3>
+                    <p>Projects Completed</p>
+                </div>
+
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="fas fa-smile-beam"></i>
+                    </div>
+                    <h3 class="counter" data-target="98">0</h3>
+                    <p>Client Satisfaction %</p>
+                </div>
+
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="counter" data-target="50">0</h3>
+                    <p>Team Members</p>
+                </div>
+
+                <div class="stat-item fade-in">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="counter" data-target="5">0</h3>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+
+            <!-- Live Activity Indicator -->
+            <div class="live-activity fade-in">
+                <div class="activity-pulse"></div>
+                <span id="liveActivity">24 people viewing this page today</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <p>Don't just take our word for it - hear from businesses we've transformed</p>
+            </div>
+
+            <div class="testimonials-carousel">
+                <div class="testimonial-card active fade-in">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Jenda Mobility transformed our online presence completely. Within 3
+                        months, we saw a 300% increase in website traffic and our conversion rate doubled. Their team is
+                        professional, creative, and truly understands digital marketing."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>CEO, TechStart Solutions</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-metric">
+                        <i class="fas fa-chart-line"></i>
+                        <span>300% Traffic Increase</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Outstanding work! The new website design is stunning and our customers
+                        love it. Sales have increased by 150% and we're now ranking on page 1 for our key search terms.
+                        Best investment we've made."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Owner, Urban Boutique</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-metric">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>150% Sales Growth</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional, responsive, and results-driven. Jenda Mobility didn't
+                        just build us a website, they built us a digital platform that generates leads 24/7. Highly
+                        recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Amanda Rodriguez</h4>
+                            <p>Marketing Director, GrowthCo</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-metric">
+                        <i class="fas fa-users"></i>
+                        <span>500+ New Leads</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" id="testimonialPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-dots" id="testimonialDots"></div>
+                <button class="carousel-btn next" id="testimonialNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the perfect plan for your business needs</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card fade-in">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p>Perfect for small businesses</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">UGX</span>
+                        <span class="amount">2.5M</span>
+                        <span class="period">/project</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Custom Website Design</li>
+                        <li><i class="fas fa-check"></i> Up to 5 Pages</li>
+                        <li><i class="fas fa-check"></i> Mobile Responsive</li>
+                        <li><i class="fas fa-check"></i> Basic SEO Setup</li>
+                        <li><i class="fas fa-check"></i> Contact Form</li>
+                        <li><i class="fas fa-check"></i> 30 Days Support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> E-Commerce</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Advanced SEO</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Professional Plan (Featured) -->
+                <div class="pricing-card featured fade-in">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <p>For growing businesses</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">UGX</span>
+                        <span class="amount">5M</span>
+                        <span class="period">/project</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Premium Website Design</li>
+                        <li><i class="fas fa-check"></i> Up to 15 Pages</li>
+                        <li><i class="fas fa-check"></i> Mobile Responsive</li>
+                        <li><i class="fas fa-check"></i> Advanced SEO (3 months)</li>
+                        <li><i class="fas fa-check"></i> E-Commerce Ready</li>
+                        <li><i class="fas fa-check"></i> Blog Integration</li>
+                        <li><i class="fas fa-check"></i> 90 Days Support</li>
+                        <li><i class="fas fa-check"></i> Social Media Setup</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-block">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card fade-in">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p>Custom solutions at scale</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">UGX</span>
+                        <span class="amount">10M+</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Fully Custom Solution</li>
+                        <li><i class="fas fa-check"></i> Unlimited Pages</li>
+                        <li><i class="fas fa-check"></i> Advanced Features</li>
+                        <li><i class="fas fa-check"></i> Dedicated SEO Team</li>
+                        <li><i class="fas fa-check"></i> Full E-Commerce</li>
+                        <li><i class="fas fa-check"></i> Multi-Language</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                        <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">
+                        Contact Sales
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pricing Note -->
+            <div class="pricing-note fade-in">
+                <i class="fas fa-info-circle"></i>
+                <p>All plans include free SSL certificate, hosting setup assistance, and training. Custom packages
+                    available.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Got questions? We've got answers</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>How long does it take to build a website?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Typical projects take 2-4 weeks from start to launch, depending on complexity. Simple
+                            websites can be completed in 7-10 days, while e-commerce or custom applications may take 6-8
+                            weeks. We'll provide a detailed timeline during our discovery phase.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>Do you provide ongoing support and maintenance?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! All our plans include initial support (30-90 days depending on package). After that, we
+                            offer flexible maintenance packages starting at $99/month including updates, backups,
+                            security monitoring, and technical support.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>Will my website be mobile-friendly?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! All websites we build are fully responsive and optimized for mobile, tablet, and
+                            desktop devices. With 60%+ of web traffic coming from mobile, we ensure your site looks
+                            perfect on every screen size.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>Can you help with SEO and digital marketing?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! SEO and digital marketing are core services. We offer comprehensive SEO packages, Google
+                            Ads management, social media marketing, and content strategy to help you reach your target
+                            audience and grow your business online.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>What if I need changes after the website is launched?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No problem! We offer flexible update packages and can train you to make simple changes
+                            yourself. For larger updates, we provide hourly rates or can create a custom package based
+                            on your needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>Do I own the website after it's built?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Once the project is completed and paid for, you own all rights to the website, including
+                            the design, content, and code. We'll provide you with all necessary files and documentation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section services" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Jenda Mobility</h2>
+                <p>Your partner in digital transformation</p>
+            </div>
+
+            <div class="about-content fade-in">
+                <p>At Jenda Mobility, we believe every business deserves a powerful digital presence. Whether you're a
+                    small startup or an established enterprise, we craft tailored solutions that drive real results. Our
+                    team of experts combines creativity, technical excellence, and strategic thinking to help you stand
+                    out in the digital landscape.</p>
+                <p>From stunning websites to comprehensive SEO strategies and local market domination through Google
+                    Maps optimization, we're your one-stop solution for all things digital. Let's build something
+                    amazing together.</p>
+
+                <!-- Trust Badges -->
+                <div class="trust-badges">
+                    <div class="badge-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certified Professionals</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>100% Secure</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fas fa-award"></i>
+                        <span>Award Winning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Let's Start Your Project</h2>
+                <p>Ready to transform your digital presence? Get in touch with us today</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in">
+                    <h3>Get In Touch</h3>
+                    <p>Have a project in mind? Let's discuss how we can help you achieve your digital goals.</p>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:info@jendamobility.com">info@jendamobility.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+256703317310">+256 703 317 310</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Kampala, Uganda</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Mon - Fri: 9AM - 6PM EAT</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="contact-form fade-in" action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+                    method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email">Email Address</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder=" ">
+                            <label for="phone">Phone Number (Optional)</label>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="web">Web Development</option>
+                                <option value="seo">SEO Optimization</option>
+                                <option value="marketing">Digital Marketing</option>
+                                <option value="branding">Branding & Design</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="service">Service Interested In</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder=" " required></textarea>
+                        <label for="message">Tell Us About Your Project</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+
+                    <p class="form-note">
+                        <i class="fas fa-lock"></i>
+                        Your information is secure and will never be shared
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Newsletter Section -->
+            <div class="newsletter fade-in">
+                <div class="newsletter-content">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Get the latest web design tips, SEO strategies, and exclusive offers delivered to your inbox</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Jenda Mobility</h4>
+                    <p>Transforming businesses through innovative digital solutions. Your success is our mission.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/dannyntale10" class="social-link" aria-label="GitHub"
+                            target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <a href="#services">Web Development</a>
+                    <a href="#services">SEO Optimization</a>
+                    <a href="#services">Google Maps</a>
+                    <a href="#services">Branding & Design</a>
+                    <a href="#services">Digital Marketing</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#process">Our Process</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="#contact">Contact</a>
+                    <a href="login.html">Client Login</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> info@jendamobility.com</p>
+                    <p><i class="fas fa-phone"></i> +256 703 317 310</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</p>
+
+                    <!-- Trust Badges -->
+                    <div class="footer-badges">
+                        <i class="fas fa-lock" title="SSL Secure"></i>
+                        <i class="fas fa-shield-alt" title="Protected"></i>
+                        <i class="fas fa-certificate" title="Certified"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jenda Mobility. All rights reserved. Built with ❤️ for digital excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage"></span>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
